@@ -23,5 +23,5 @@ jobs:
       - name: Upload SHA
         uses: actions/upload-artifact@v4
         with:
-          name: webapps-sha.txt
-          path: webapps-sha.txt
+          name: webapps-sha
+          path: webapps-sha-${{ github.ref_name }}.txt
