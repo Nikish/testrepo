@@ -19,7 +19,7 @@ jobs:
       - name: Download Artifact
         uses: actions/download-artifact@v4
         with:
-          name: text-file
+          name: webapps-sha.txt
           path: webapps-sha.txt
       - name: Read and Print File Content
         run: cat artifacts/webapps-sha.txt
