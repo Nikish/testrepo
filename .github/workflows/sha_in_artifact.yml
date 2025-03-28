@@ -18,7 +18,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Save SHA as artifact
-        run: echo "${{ github.sha}}" > webapps-sha.txt
+        run: echo "${{ github.sha }}" > webapps-sha-${{ github.ref_name }}.txt
  
       - name: Upload SHA
         uses: actions/upload-artifact@v4
